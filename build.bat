@@ -1,0 +1,2 @@
+set WFLAGS=/W4 /WX /wd4101 /wd4065 /wd4100
+cl /nologo win32_app.cpp /Fe:app.exe /Iimgui /Oi /EHa- /EHs- /EHc- /GA /Gm- /GR- /GS- /Gw /Gy /Zi /MT /fastfail %WFLAGS% /link /DEBUG:FULL /OPT:REF user32.lib opengl32.lib
