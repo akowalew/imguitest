@@ -15,7 +15,7 @@
 
 #define Assert(x) if((x) == 0) { *(int*)(0) = 0; }
 
-LRESULT WindowProc(HWND Window, UINT Msg, WPARAM Wparam, LPARAM Lparam)
+LRESULT __stdcall WindowProc(HWND Window, UINT Msg, WPARAM Wparam, LPARAM Lparam)
 {
     if(ImGui_ImplWin32_WndProcHandler(Window, Msg, Wparam, Lparam))
     {
@@ -49,7 +49,7 @@ LRESULT WindowProc(HWND Window, UINT Msg, WPARAM Wparam, LPARAM Lparam)
     return Result;
 }
 
-int WinMain(HINSTANCE Instance, HINSTANCE PrevInstance, LPSTR CmdLine, int ShowCmd)
+int __stdcall WinMain(HINSTANCE Instance, HINSTANCE PrevInstance, LPSTR CmdLine, int ShowCmd)
 {
     WNDCLASSEXA WindowClassEx = {0};
     WindowClassEx.cbSize = sizeof(WindowClassEx);
