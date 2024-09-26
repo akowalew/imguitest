@@ -135,7 +135,7 @@ int WinMain(HINSTANCE Instance, HINSTANCE PrevInstance, LPSTR CmdLine, int ShowC
         ImGui_ImplWin32_NewFrame();
         ImGui::NewFrame();
 
-#if 0
+#if 1
         ImGui::ShowDemoWindow(0);
 #else
         ImGui::Text("This is dear ImGui!");
